@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2ADFEA4F2AC79E4300D25805 /* ReelPalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFEA4E2AC79E4300D25805 /* ReelPalsApp.swift */; };
+		2ADFEA512AC79E4300D25805 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFEA502AC79E4300D25805 /* ContentView.swift */; };
+		2ADFEA532AC79E4400D25805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADFEA522AC79E4400D25805 /* Assets.xcassets */; };
+		2ADFEA562AC79E4400D25805 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADFEA552AC79E4400D25805 /* Preview Assets.xcassets */; };
+		2ADFEA582AC79E4400D25805 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFEA572AC79E4400D25805 /* Persistence.swift */; };
+		2ADFEA5B2AC79E4400D25805 /* ReelPals.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFEA592AC79E4400D25805 /* ReelPals.xcdatamodeld */; };
+		2ADFEA662AC79E4500D25805 /* ReelPalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFEA652AC79E4500D25805 /* ReelPalsTests.swift */; };
+		2ADFEA702AC79E4500D25805 /* ReelPalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFEA6F2AC79E4500D25805 /* ReelPalsUITests.swift */; };
+		2ADFEA722AC79E4500D25805 /* ReelPalsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFEA712AC79E4500D25805 /* ReelPalsUITestsLaunchTests.swift */; };
+		2ADFEA7F2AC7A14500D25805 /* SubmissionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFEA7E2AC7A14500D25805 /* SubmissionScreen.swift */; };
+		2ADFEA812AC7A5AB00D25805 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFEA802AC7A5AB00D25805 /* MovieModel.swift */; };
+		2ADFEA832AC7AEA900D25805 /* AsyncImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFEA822AC7AEA900D25805 /* AsyncImageLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2ADFEA622AC79E4500D25805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ADFEA432AC79E4300D25805 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ADFEA4A2AC79E4300D25805;
+			remoteInfo = ReelPals;
+		};
+		2ADFEA6C2AC79E4500D25805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ADFEA432AC79E4300D25805 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ADFEA4A2AC79E4300D25805;
+			remoteInfo = ReelPals;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2ADFEA4B2AC79E4300D25805 /* ReelPals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReelPals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADFEA4E2AC79E4300D25805 /* ReelPalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelPalsApp.swift; sourceTree = "<group>"; };
+		2ADFEA502AC79E4300D25805 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2ADFEA522AC79E4400D25805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2ADFEA552AC79E4400D25805 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2ADFEA572AC79E4400D25805 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		2ADFEA5A2AC79E4400D25805 /* ReelPals.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReelPals.xcdatamodel; sourceTree = "<group>"; };
+		2ADFEA5C2AC79E4400D25805 /* ReelPals.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReelPals.entitlements; sourceTree = "<group>"; };
+		2ADFEA612AC79E4500D25805 /* ReelPalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReelPalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADFEA652AC79E4500D25805 /* ReelPalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelPalsTests.swift; sourceTree = "<group>"; };
+		2ADFEA6B2AC79E4500D25805 /* ReelPalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReelPalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADFEA6F2AC79E4500D25805 /* ReelPalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelPalsUITests.swift; sourceTree = "<group>"; };
+		2ADFEA712AC79E4500D25805 /* ReelPalsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelPalsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2ADFEA7E2AC7A14500D25805 /* SubmissionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionScreen.swift; sourceTree = "<group>"; };
+		2ADFEA802AC7A5AB00D25805 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		2ADFEA822AC7AEA900D25805 /* AsyncImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2ADFEA482AC79E4300D25805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADFEA5E2AC79E4500D25805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADFEA682AC79E4500D25805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ADFEA422AC79E4300D25805 = {
+			isa = PBXGroup;
+			children = (
+				2ADFEA4D2AC79E4300D25805 /* ReelPals */,
+				2ADFEA642AC79E4500D25805 /* ReelPalsTests */,
+				2ADFEA6E2AC79E4500D25805 /* ReelPalsUITests */,
+				2ADFEA4C2AC79E4300D25805 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2ADFEA4C2AC79E4300D25805 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2ADFEA4B2AC79E4300D25805 /* ReelPals.app */,
+				2ADFEA612AC79E4500D25805 /* ReelPalsTests.xctest */,
+				2ADFEA6B2AC79E4500D25805 /* ReelPalsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2ADFEA4D2AC79E4300D25805 /* ReelPals */ = {
+			isa = PBXGroup;
+			children = (
+				2ADFEA4E2AC79E4300D25805 /* ReelPalsApp.swift */,
+				2ADFEA502AC79E4300D25805 /* ContentView.swift */,
+				2ADFEA7E2AC7A14500D25805 /* SubmissionScreen.swift */,
+				2ADFEA522AC79E4400D25805 /* Assets.xcassets */,
+				2ADFEA572AC79E4400D25805 /* Persistence.swift */,
+				2ADFEA5C2AC79E4400D25805 /* ReelPals.entitlements */,
+				2ADFEA592AC79E4400D25805 /* ReelPals.xcdatamodeld */,
+				2ADFEA542AC79E4400D25805 /* Preview Content */,
+				2ADFEA802AC7A5AB00D25805 /* MovieModel.swift */,
+				2ADFEA822AC7AEA900D25805 /* AsyncImageLoader.swift */,
+			);
+			path = ReelPals;
+			sourceTree = "<group>";
+		};
+		2ADFEA542AC79E4400D25805 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2ADFEA552AC79E4400D25805 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2ADFEA642AC79E4500D25805 /* ReelPalsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2ADFEA652AC79E4500D25805 /* ReelPalsTests.swift */,
+			);
+			path = ReelPalsTests;
+			sourceTree = "<group>";
+		};
+		2ADFEA6E2AC79E4500D25805 /* ReelPalsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2ADFEA6F2AC79E4500D25805 /* ReelPalsUITests.swift */,
+				2ADFEA712AC79E4500D25805 /* ReelPalsUITestsLaunchTests.swift */,
+			);
+			path = ReelPalsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2ADFEA4A2AC79E4300D25805 /* ReelPals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ADFEA752AC79E4500D25805 /* Build configuration list for PBXNativeTarget "ReelPals" */;
+			buildPhases = (
+				2ADFEA472AC79E4300D25805 /* Sources */,
+				2ADFEA482AC79E4300D25805 /* Frameworks */,
+				2ADFEA492AC79E4300D25805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReelPals;
+			productName = ReelPals;
+			productReference = 2ADFEA4B2AC79E4300D25805 /* ReelPals.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2ADFEA602AC79E4500D25805 /* ReelPalsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ADFEA782AC79E4500D25805 /* Build configuration list for PBXNativeTarget "ReelPalsTests" */;
+			buildPhases = (
+				2ADFEA5D2AC79E4500D25805 /* Sources */,
+				2ADFEA5E2AC79E4500D25805 /* Frameworks */,
+				2ADFEA5F2AC79E4500D25805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ADFEA632AC79E4500D25805 /* PBXTargetDependency */,
+			);
+			name = ReelPalsTests;
+			productName = ReelPalsTests;
+			productReference = 2ADFEA612AC79E4500D25805 /* ReelPalsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2ADFEA6A2AC79E4500D25805 /* ReelPalsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ADFEA7B2AC79E4500D25805 /* Build configuration list for PBXNativeTarget "ReelPalsUITests" */;
+			buildPhases = (
+				2ADFEA672AC79E4500D25805 /* Sources */,
+				2ADFEA682AC79E4500D25805 /* Frameworks */,
+				2ADFEA692AC79E4500D25805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ADFEA6D2AC79E4500D25805 /* PBXTargetDependency */,
+			);
+			name = ReelPalsUITests;
+			productName = ReelPalsUITests;
+			productReference = 2ADFEA6B2AC79E4500D25805 /* ReelPalsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2ADFEA432AC79E4300D25805 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					2ADFEA4A2AC79E4300D25805 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					2ADFEA602AC79E4500D25805 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 2ADFEA4A2AC79E4300D25805;
+					};
+					2ADFEA6A2AC79E4500D25805 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 2ADFEA4A2AC79E4300D25805;
+					};
+				};
+			};
+			buildConfigurationList = 2ADFEA462AC79E4300D25805 /* Build configuration list for PBXProject "ReelPals" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2ADFEA422AC79E4300D25805;
+			productRefGroup = 2ADFEA4C2AC79E4300D25805 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2ADFEA4A2AC79E4300D25805 /* ReelPals */,
+				2ADFEA602AC79E4500D25805 /* ReelPalsTests */,
+				2ADFEA6A2AC79E4500D25805 /* ReelPalsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2ADFEA492AC79E4300D25805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADFEA562AC79E4400D25805 /* Preview Assets.xcassets in Resources */,
+				2ADFEA532AC79E4400D25805 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADFEA5F2AC79E4500D25805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADFEA692AC79E4500D25805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ADFEA472AC79E4300D25805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADFEA812AC7A5AB00D25805 /* MovieModel.swift in Sources */,
+				2ADFEA582AC79E4400D25805 /* Persistence.swift in Sources */,
+				2ADFEA5B2AC79E4400D25805 /* ReelPals.xcdatamodeld in Sources */,
+				2ADFEA512AC79E4300D25805 /* ContentView.swift in Sources */,
+				2ADFEA7F2AC7A14500D25805 /* SubmissionScreen.swift in Sources */,
+				2ADFEA4F2AC79E4300D25805 /* ReelPalsApp.swift in Sources */,
+				2ADFEA832AC7AEA900D25805 /* AsyncImageLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADFEA5D2AC79E4500D25805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADFEA662AC79E4500D25805 /* ReelPalsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADFEA672AC79E4500D25805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADFEA722AC79E4500D25805 /* ReelPalsUITestsLaunchTests.swift in Sources */,
+				2ADFEA702AC79E4500D25805 /* ReelPalsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2ADFEA632AC79E4500D25805 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ADFEA4A2AC79E4300D25805 /* ReelPals */;
+			targetProxy = 2ADFEA622AC79E4500D25805 /* PBXContainerItemProxy */;
+		};
+		2ADFEA6D2AC79E4500D25805 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ADFEA4A2AC79E4300D25805 /* ReelPals */;
+			targetProxy = 2ADFEA6C2AC79E4500D25805 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2ADFEA732AC79E4500D25805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2ADFEA742AC79E4500D25805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		2ADFEA762AC79E4500D25805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ReelPals/ReelPals.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReelPals/Preview Content\"";
+				DEVELOPMENT_TEAM = RY64F2G47W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZOMBiEZ4APPS.ReelPals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2ADFEA772AC79E4500D25805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ReelPals/ReelPals.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReelPals/Preview Content\"";
+				DEVELOPMENT_TEAM = RY64F2G47W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZOMBiEZ4APPS.ReelPals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2ADFEA792AC79E4500D25805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RY64F2G47W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZOMBiEZ4APPS.ReelPalsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReelPals.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReelPals";
+			};
+			name = Debug;
+		};
+		2ADFEA7A2AC79E4500D25805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RY64F2G47W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZOMBiEZ4APPS.ReelPalsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReelPals.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReelPals";
+			};
+			name = Release;
+		};
+		2ADFEA7C2AC79E4500D25805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RY64F2G47W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZOMBiEZ4APPS.ReelPalsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ReelPals;
+			};
+			name = Debug;
+		};
+		2ADFEA7D2AC79E4500D25805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RY64F2G47W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ZOMBiEZ4APPS.ReelPalsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ReelPals;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2ADFEA462AC79E4300D25805 /* Build configuration list for PBXProject "ReelPals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ADFEA732AC79E4500D25805 /* Debug */,
+				2ADFEA742AC79E4500D25805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ADFEA752AC79E4500D25805 /* Build configuration list for PBXNativeTarget "ReelPals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ADFEA762AC79E4500D25805 /* Debug */,
+				2ADFEA772AC79E4500D25805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ADFEA782AC79E4500D25805 /* Build configuration list for PBXNativeTarget "ReelPalsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ADFEA792AC79E4500D25805 /* Debug */,
+				2ADFEA7A2AC79E4500D25805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ADFEA7B2AC79E4500D25805 /* Build configuration list for PBXNativeTarget "ReelPalsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ADFEA7C2AC79E4500D25805 /* Debug */,
+				2ADFEA7D2AC79E4500D25805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2ADFEA592AC79E4400D25805 /* ReelPals.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2ADFEA5A2AC79E4400D25805 /* ReelPals.xcdatamodel */,
+			);
+			currentVersion = 2ADFEA5A2AC79E4400D25805 /* ReelPals.xcdatamodel */;
+			path = ReelPals.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2ADFEA432AC79E4300D25805 /* Project object */;
+}
