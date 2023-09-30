@@ -1,0 +1,72 @@
+# ReelPals - Movie Search App
+
+## Overview
+
+ReelPals is a SwiftUI-based movie search app that allows users to search for movies and view details about them. This README provides an overview of the project's structure and functionality.
+
+## Project Structure
+
+The project is structured as follows:
+
+- **ReelPalsApp.swift**: The main entry point of the app, defining the app's structure and navigation.
+
+- **ContentView.swift**: The main content view containing a TabView for navigating between screens.
+
+- **SubmissionScreen.swift**: The screen where users can submit movie search queries.
+
+- **Model/Film.swift**: Defines the `Film` struct used to represent movie data.
+
+- **Utilities/AsyncImageLoader.swift**: A utility for loading images asynchronously.
+
+- **Utilities/PersistenceController.swift**: A utility for Core Data persistence (not used in this version).
+
+- **Utilities/NetworkError.swift**: Defines custom network error types (not used in this version).
+
+## Functionality
+
+### Submission Screen
+
+- Users can enter a movie or TV show title in the search field.
+- They can press the "Search" button or press Enter to initiate a search.
+- Movie search results are displayed, including movie posters, titles, and overviews.
+- Results are sorted by popularity by making an API call.
+
+## IMDB API Migration (In Progress)
+
+Please note that the app is currently in the process of migrating from the original movie API to the IMDB API. Here are some important points to consider:
+
+- The project has been cloned to create a new version specifically for the IMDB API.
+
+- The original project and the IMDB API project share a similar structure.
+
+- The "SubmissionScreen" and "Film" model have been updated to accommodate the IMDB API.
+
+- The API endpoints and keys have been adjusted to work with IMDB's data.
+
+- The sorting of search results has been updated to use "vote_count" as the sorting parameter.
+
+## How to Run the Project
+
+To run the project:
+
+1. Clone the repository to your local machine.
+
+2. Open the project in Xcode.
+
+3. Build and run the project on your preferred iOS simulator or device.
+
+## Future Enhancements
+
+In the IMDB API version of the app, we plan to include additional features such as:
+
+- Movie details page with information like release date, genres, and more.
+
+- A "View" screen for viewing additional movie details.
+
+- Improved error handling and user feedback.
+
+## Feedback and Contributions
+
+We welcome feedback and contributions to improve this app. Please feel free to submit issues or pull requests if you have any suggestions or improvements to share.
+
+Enjoy using ReelPals!
